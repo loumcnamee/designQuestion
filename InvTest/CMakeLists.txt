@@ -29,5 +29,5 @@ gtest_discover_tests(InvTest)
 
 #target_include_directories (InvTest PUBLIC "C://git//googletest//googletest//include")
 
+target_include_directories (InvTest PUBLIC "..\\build\\_deps\\googletest-src\\googletest\\include\\gtest")
 target_include_directories (InvTest PUBLIC "..\\build\\_deps\\googletest-src\\googletest\\include")
-

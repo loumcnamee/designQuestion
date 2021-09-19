@@ -7,5 +7,13 @@ unsigned int Inventory::size() const {
 
 void Inventory::addItem(const InventoryItem& theItem)
 {
-  _inventory.insert( std::pair<unsigned int, const InventoryItem&>(22, theItem) );
+  _inventory.insert( std::pair<unsigned int, const InventoryItem&>(getNewID(), theItem) );
+}
+
+unsigned int Inventory::getNewID() const
+{
+
+  unsigned int newID = _inventory.size() + 1;
+
+  return newID;
 }

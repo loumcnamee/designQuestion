@@ -86,4 +86,15 @@ TEST(InventoryTest, AddItemTest) {
 
   ASSERT_EQ(myInventory.size(),1);
 
+  ItemDate date2 = ItemDate(11,10,2021);
+
+  BookItem book2 = BookItem();
+  book1.setAuthor("auth2");
+  book1.setTitle("title2");
+  book1.setPublishDate(date2);
+
+  myInventory.addItem(book2);
+
+  ASSERT_EQ(myInventory.size(),2);
+
 }

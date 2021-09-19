@@ -38,6 +38,8 @@ private:
 
   std::map<unsigned int, const InventoryItem&> _inventory;
 
+  unsigned int getNewID() const;
+
 
   
 };
